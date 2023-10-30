@@ -184,3 +184,18 @@
     - Нажимаем кнопку "Create battle"
   expected-result: |
     Создается игра с ботом
+
+- summary: |
+    Проверка возможности сдаться во время игры
+  requirement: |
+    Пользователь может сдаться в игре
+  prerequisites: |
+    Открыта игра
+  test-data: |
+    Тестовые данные отсутсвуют
+  steps:
+    - Над редактором нажимаем на флаг "Give up"
+    - Выходит сообщение "Are you sure you want to give up?" Give up / Cancel
+    - Подтверждаем выбор нажав кнопку "Give up"
+  expected-result: |
+    Появляется сообщение что игра проиграна
