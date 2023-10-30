@@ -150,3 +150,37 @@
     - Нажимаем кнопку "Send"
   expected-result: |
     Сообщение отправляется в чат
+
+- summary: |
+    Проверка игры с другим пользователем
+  requirement: |
+    Пользователь может играть с другим игроком
+  prerequisites: |
+    Открыта главная страница https://codebattle.hexlet.io
+  test-data: |
+    Тестовые данные отсутсвуют
+  steps:
+    - Нажимаем кнопку "CREATE A GAME"
+    - В открывшемся окне выбираем Level = 2, time control = 15 min
+    - Выбираем режим "With other users"
+    - Нажимаем кнопку "Create battle"
+    - Созданная игра появляется в лобби
+    - Нажимаем на кнопку "Continue"
+  expected-result: |
+    Появляется ссылка для предоставления другому пользователю
+
+- summary: |
+    Проверка игры с ботом
+  requirement: |
+    Пользователь может иргать с ботом
+  prerequisites: |
+    Открыта главная страница https://codebattle.hexlet.io
+  test-data: |
+    Тестовые данные отсутсвуют
+  steps:
+    - Нажимаем кнопку "CREATE A GAME"
+    - В открывшемся окне выбираем Level = 2, time control = 15 min
+    - Выбираем режим "With a bot"
+    - Нажимаем кнопку "Create battle"
+  expected-result: |
+    Создается игра с ботом
