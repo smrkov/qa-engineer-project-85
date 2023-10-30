@@ -122,3 +122,18 @@
     - Нажимаем кнопку "Create battle"
   expected-result: |
     Игра создается в лобби c выбранными параметрами
+
+- summary: |
+    Проверка времени до окончания игры
+  requirement: |
+    В поле timeout во время игры должно отображаться время до завершения игры
+  prerequisites: |
+    Открыта главная страница https://codebattle.hexlet.io
+  test-data: |
+    Тестовые данные отсутсвуют
+  steps:
+    - Нажимаем кнопку "CREATE A GAME"
+    - В открывшемся окне выбираем Level = 1, тип игры = bot, time control = 15 min
+    - Нажимаем кнопку "Create battle"
+  expected-result: |
+    Игра создается, в поле TIMEOUT IN: идет отсчет времени до окончания игры
