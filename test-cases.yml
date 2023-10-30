@@ -1,18 +1,49 @@
 ---
 - summary: |
-    Проверка регистрауии пользователя
+    Проверка регистрации пользователя
   requirement: |
     Пользователь может зарегистрироваться на сайте
   prerequisites: |
-    Открыта страница Sign up
+    Открыта главная страница https://codebattle.hexlet.io
   test-data: |
-    Тестовые данные
     Nickname = Ivan1986 Email = Ivan1986@yandex.ru Password = Ivan123456
   steps:
+    - Нажимаем кнопку "Sign up"
     - Вводим Nickname
     - Вводим email
     - Вводим Password
     - Вводим Password Confirmation
-    - Нажимаем кнопку «Submit»
+    - Нажимаем кнопку "Submit"
+  expected-result: |
+    Пользователь должен попасть на главную страницу
+
+- summary: |
+    Проверка авторизации пользователя через email
+  requirement: |
+    Пользователь может авторизоваться через email
+  prerequisites: |
+    Открыта главная страница https://codebattle.hexlet.io
+  test-data: |
+    Email = Ivan1986@yandex.ru Password = Ivan123456
+  steps:
+    - Нажимаем кнопку "Sign in"
+    - Вводим email
+    - Вводим Password
+    - Нажимаем кнопку "Submit"
+  expected-result: |
+    Пользователь должен попасть на главную страницу
+
+- summary: |
+    Проверка авторизации пользователя через Github
+  requirement: |
+    Пользователь может авторизоваться через Github
+  prerequisites: |
+    Открыта главная страница https://codebattle.hexlet.io
+  test-data: |
+    Тестовые данные отсутсвуют
+  steps:
+    - Нажимаем кнопку "Sign in"
+    - Нажимаем кнопку 'Sign in with Github'
+    - Вводим email и password от Github
   expected-result: |
     Пользователь должен попасть на главную страницу
