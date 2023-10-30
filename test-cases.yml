@@ -1,1 +1,18 @@
-
+---
+- summary: |
+    Проверка регистрауии пользователя
+  requirement: |
+    Пользователь может зарегистрироваться на сайте
+  prerequisites: |
+    Открыта страница Sign up
+  test-data: |
+    Тестовые данные
+    Nickname = Ivan1986 Email = Ivan1986@yandex.ru Password = Ivan123456
+  steps:
+    - Вводим Nickname
+    - Вводим email
+    - Вводим Password
+    - Вводим Password Confirmation
+    - Нажимаем кнопку «Submit»
+  expected-result: |
+    Пользователь должен попасть на главную страницу
