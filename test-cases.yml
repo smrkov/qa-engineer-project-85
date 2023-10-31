@@ -345,3 +345,36 @@
     - Нажимаем кнопку "Submit"
   expected-result: |
     Выводится сообщение об ошибки несовпадения пароля
+
+- summary: |
+    Проверка мобильной версии сайта
+  requirement: |
+    Сайт должен быть удобным на мобильном устройстве
+  prerequisites: |
+    Открыта главная страница https://codebattle.hexlet.io
+  test-data: |
+    Phone = iPhone 11
+  steps:
+    - Зайти в консоль разработчика DevTools
+    - Выбираем Devace toolbar iPhone 11
+  expected-result: |
+    Мобильная версия отображается корректно, текст читаемый, элементы сайта на месте
+
+- summary: |
+    Проверка работы сайта в разных браузерах
+  requirement: |
+    Сайт должен быть протестирован на совместимость с последними версиями браузеров
+  prerequisites: |
+    Открыта главная страница https://codebattle.hexlet.io в разных браузерах
+  test-data: |
+    Браузер = Opera версия не ниже 101.0.4843.58
+    Браузер = Firefox версия не ниже 116.0.3
+    Браузер = Yandex версия не ниже 23.7.3.823
+    Браузер = Chrome версия не ниже 116.0.5845.111
+  steps:
+    - Зайти на сайт https://codebattle.hexlet.io через браузер Opera
+    - Зайти на сайт https://codebattle.hexlet.io через браузер Firefox
+    - Зайти на сайт https://codebattle.hexlet.io через браузер Yandex
+    - Зайти на сайт https://codebattle.hexlet.io через браузер Chrome
+  expected-result: |
+    В разных браузерах сайт отображается корректно
