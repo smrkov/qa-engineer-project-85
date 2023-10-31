@@ -279,3 +279,34 @@
     - Нажать кнопку "Submit"
   expected-result: |
     Произведен вход на сайт с восстановленным паролем 
+
+- summary: |
+    Проверка регистрации поле Nickname
+  requirement: |
+    Поле Nickname при регистрации должно содержать от 3-16 символов
+  prerequisites: |
+    Открыта главная страница https://codebattle.hexlet.io
+  test-data: |
+    Nickname = Iv, Wwwwwwwwwwwwwwwwwwww
+  steps:
+    - Нажимаем кнопку "Sign up"
+    - Вводим Nickname
+    - Нажимаем кнопку "Submit"
+  expected-result: |
+    Выпадает сообщение об ошибки неправильного Nickname
+
+- summary: |
+    Проверка регистрации поле email
+  requirement: |
+    Поле Email должно быть валидным к форме (содержать @ и домен)
+  prerequisites: |
+    Открыта главная страница https://codebattle.hexlet.io
+  test-data: |
+    Nickname = Ivan1986 Email = Ivan1986.yandex.ru
+  steps:
+    - Нажимаем кнопку "Sign up"
+    - Вводим Nickname
+    - Вводим email
+    - Нажимаем кнопку "Submit"
+  expected-result: |
+    Выпадает сообщение об ошибки неправильного email
