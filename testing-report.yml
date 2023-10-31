@@ -1,1 +1,100 @@
+---
+- summary: |
+    Проверка регистрации пользователя
+  status: pass
 
+- summary: |
+    Проверка авторизации пользователя через email
+  status: pass
+
+- summary: |
+    Проверка авторизации пользователя через Github
+  status: pass
+
+- summary: |
+    Проверка авторизации пользователя через Discord
+  status: pass
+
+- summary: |
+    Проверка выхода пользователя из личного кабинета
+  status: pass
+
+- summary: |
+    Проверка редактирования настроек профиля
+  status: pass
+
+- summary: |
+    Проверка создания новой игры
+  status: pass
+
+- summary: |
+    Выбор параметров при создании новой игры
+  status: pass
+
+- summary: |
+    Проверка смены языка програмирования в игре
+  status: pass
+
+- summary: |
+    Проверка написания сообщения в чат игры
+  status: pass
+
+- summary: |
+    Проверка игры с другим пользователем
+  status: pass
+
+- summary: |
+    Проверка игры с ботом
+  status: pass
+
+- summary: |
+    Проверка возможности сдаться во время игры
+  status: pass
+
+- summary: |
+    Проверка возможности сброса кода в редакторе во время игры
+  status: pass
+
+- summary: |
+    Проверка возможности просматривать профиль других игроков
+  status: pass
+
+- summary: |
+    Проверка возможности просматривать завершенные игры и турниры
+  status: pass
+
+- summary: |
+    Проверка возможности создания турнира
+  status: pass
+
+- summary: |
+    Проверка возможности успешного восстановления пароля
+  status: pass
+
+- summary: |
+    Проверка регистрации поле Nickname
+  status: pass
+
+- summary: |
+    Проверка регистрации поле email
+  status: pass
+
+- summary: |
+    Проверка регистрации поле Password
+  status: pass
+
+- summary: |
+    Проверка регистрации поле подтверждение Password
+  status: pass
+
+- summary: |
+    Проверка мобильной версии сайта
+  status: pass
+
+- summary: |
+    Проверка работы сайта в разных браузерах
+  status: pass
+
+- summary: |
+    Проверка безопасности сайта
+  status: pass
