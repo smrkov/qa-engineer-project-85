@@ -310,3 +310,38 @@
     - Нажимаем кнопку "Submit"
   expected-result: |
     Выпадает сообщение об ошибки неправильного email
+
+- summary: |
+    Проверка регистрации поле Password
+  requirement: |
+    Поле Password должно содержать от 6-16 символов
+  prerequisites: |
+    Открыта главная страница https://codebattle.hexlet.io
+  test-data: |
+    Nickname = Ivan1986 Email = Ivan1986@yandex.ru Password = Ivan1
+  steps:
+    - Нажимаем кнопку "Sign up"
+    - Вводим Nickname
+    - Вводим email
+    - Вводим пароль
+    - Нажимаем кнопку "Submit"
+  expected-result: |
+    Выпадает сообщение об ошибки неправильного пароля
+
+- summary: |
+    Проверка регистрации поле подтверждение Password
+  requirement: |
+    Поле Password Confirmation должно совпадать с полем Password
+  prerequisites: |
+    Открыта главная страница https://codebattle.hexlet.io
+  test-data: |
+    Nickname = Ivan1986 Email = Ivan1986@yandex.ru Password = Ivan12345
+  steps:
+    - Нажимаем кнопку "Sign up"
+    - Вводим Nickname
+    - Вводим email
+    - Вводим пароль = Ivan12345
+    - Вводим подтверждение пароля = Ivan1234
+    - Нажимаем кнопку "Submit"
+  expected-result: |
+    Выпадает сообщение об ошибки несовпадения пароля
