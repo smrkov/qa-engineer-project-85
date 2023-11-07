@@ -6,7 +6,7 @@
   prerequisites: |
     Открыта главная страница https://codebattle.hexlet.io
   test-data: |
-    Nickname = Ivan1986 Email = Ivan1986@yandex.ru Password = Ivan123456
+    Тестовые данные отсутствуют
   steps:
     - Нажимаем кнопку "Sign up"
     - Вводим Nickname
@@ -39,8 +39,9 @@
     Пользователь может авторизоваться через Github
   prerequisites: |
     Открыта главная страница https://codebattle.hexlet.io
+    У пользователя создан аккаунт в Github
   test-data: |
-    Тестовые данные отсутсвуют
+    Тестовые данные отсутствуют
   steps:
     - Нажимаем кнопку "Sign in"
     - Нажимаем кнопку 'Sign in with Github'
@@ -54,8 +55,9 @@
     Пользователь может авторизоваться через Discord
   prerequisites: |
     Открыта главная страница https://codebattle.hexlet.io
+    У пользователя создан аккаунт в Discord
   test-data: |
-    Тестовые данные отсутсвуют
+    Тестовые данные отсутствуют
   steps:
     - Нажимаем кнопку "Sign in"
     - Нажимаем кнопку 'Sign in with Discord'
@@ -166,6 +168,7 @@
     - Нажимаем кнопку "Create battle"
     - Созданная игра появляется в лобби
     - Нажимаем на кнопку "Continue"
+    - Заходим через другой браузер с другим аккаунтом, видим созданную игру, нажимаем кнопку "Fight"
   expected-result: |
     Появляется ссылка для предоставления другому пользователю
 
